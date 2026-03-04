@@ -291,7 +291,7 @@ This project is for educational and informational purposes.
 ## 🙏 Acknowledgments
 
 - **Data Source**: Legislative Department, Government of India
-- **AI Model**: Google Gemini 1.5 Pro
+- **AI Model**: Google Gemini-2.5-flash
 - **Framework**: LangChain
 - **Vector DB**: ChromaDB
 - **UI**: Streamlit
