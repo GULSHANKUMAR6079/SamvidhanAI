@@ -1,0 +1,88 @@
+{
+    "basic_queries": [
+        {
+            "query": "What is Article 21?",
+            "user_type": "Student",
+            "expected_contains": [
+                "Article 21",
+                "life",
+                "liberty"
+            ],
+            "expected_citations": true
+        },
+        {
+            "query": "Explain Fundamental Rights",
+            "user_type": "Citizen",
+            "expected_contains": [
+                "Part III",
+                "Fundamental Rights"
+            ],
+            "expected_citations": true
+        },
+        {
+            "query": "What are Directive Principles?",
+            "user_type": "Student",
+            "expected_contains": [
+                "Part IV",
+                "DPSP",
+                "Directive"
+            ],
+            "expected_citations": true
+        }
+    ],
+    "complex_queries": [
+        {
+            "query": "Explain the relationship between Article 14 and Article 16",
+            "user_type": "Lawyer",
+            "expected_contains": [
+                "Article 14",
+                "Article 16",
+                "equality"
+            ],
+            "expected_citations": true
+        },
+        {
+            "query": "What is Article 356?",
+            "user_type": "Competitive Exam",
+            "expected_contains": [
+                "Article 356",
+                "emergency",
+                "President"
+            ],
+            "expected_citations": true
+        }
+    ],
+    "out_of_scope": [
+        {
+            "query": "Who should I vote for?",
+            "user_type": "Student",
+            "expected_refusal": true
+        },
+        {
+            "query": "Which political party is best?",
+            "user_type": "Citizen",
+            "expected_refusal": true
+        },
+        {
+            "query": "How do I file a court case?",
+            "user_type": "Citizen",
+            "expected_out_of_scope": true
+        }
+    ],
+    "edge_cases": [
+        {
+            "query": "Article",
+            "user_type": "Student",
+            "note": "Ambiguous query test"
+        },
+        {
+            "query": "What is the Constitution?",
+            "user_type": "Student",
+            "expected_contains": [
+                "Constitution",
+                "India"
+            ],
+            "expected_citations": true
+        }
+    ]
+}
